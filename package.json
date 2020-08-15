@@ -1,0 +1,31 @@
+{
+  "name": "11-note-taker",
+  "version": "1.0.0",
+  "description": "Note taker application that allows you to keep track of your thoughts, ambitious reminders, creative endeavors, and everything else that can come to mind that comes from inside. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrjohnsonpham/11-note-taker.git"
+  },
+  "keywords": [
+    "Note",
+    "Taker",
+    "Application"
+  ],
+  "author": "Johnson Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrjohnsonpham/11-note-taker/issues"
+  },
+  "homepage": "https://github.com/mrjohnsonpham/11-note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}
