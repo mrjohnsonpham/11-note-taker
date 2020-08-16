@@ -1,20 +1,20 @@
+// npm packages that help bring our app's functionality to life
 const express = require('express');
-const path = require('path');
-const mysql = require('mysql');
 
+
+// Initialize express App
 const app = express();
-
-var PORT = process.env.PORT || 3000; 
+var PORT = process.env.PORT || 3050; 
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(express.static('./public'));
 
-app.use(express.static(__dirname + ' public'));
+// Require routes file
+require("./Routes/apiRoutes")(app);
+require("./Routes/htmlRoutes")(app);
 
-
-require("./route/apiRoutes")(app);
-require("./route/htmlRoutes")(app);
-
+// Helps let us know that the port is listening
 app.listen(PORT, function(){
     console.log("App listening on PORT: " + PORT);
 });
