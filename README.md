@@ -46,3 +46,5 @@ Application should allow users to delete previously saved notes.
 https://quiet-inlet-55498.herokuapp.com/
 
 - - -
+
+![demo](./public/assets/images/demo.png)
